@@ -1,22 +1,22 @@
 Modelo        : efficientnetB1_sin_ft
-Test Accuracy : 0.8987
-Test Loss     : 0.3891
-F1 Score      : 0.9002
+Test Accuracy : 0.9679
+Test Loss     : 0.0882
+F1 Score      : 0.9679
 
---- Reporte de clasificación ---
+--- Reporte de clasificaciÃ³n ---
                   precision    recall  f1-score   support
 
           carbon       1.00      1.00      1.00        75
-   hoja_amarilla       0.92      0.91      0.91       150
-   mancha_anillo       1.00      0.90      0.95       105
-    mancha_parda       0.97      0.92      0.95       150
-         mosaico       0.82      0.88      0.85       150
-     muermo_rojo       0.73      0.93      0.82       150
-            roya       0.85      0.79      0.82       150
-           sanas       0.92      0.85      0.88       150
-           secas       1.00      0.95      0.97        73
-tizon_bacteriano       0.97      0.94      0.95       150
+   hoja_amarilla       0.97      0.98      0.98       150
+   mancha_anillo       1.00      1.00      1.00       105
+    mancha_parda       0.98      0.98      0.98       150
+         mosaico       0.95      0.94      0.95       150
+     muermo_rojo       0.94      0.96      0.95       150
+            roya       0.95      0.94      0.95       150
+           sanas       0.93      0.93      0.93       150
+           secas       1.00      1.00      1.00        78
+tizon_bacteriano       0.99      0.99      0.99       150
 
-        accuracy                           0.90      1303
-       macro avg       0.92      0.91      0.91      1303
-    weighted avg       0.91      0.90      0.90      1303
+        accuracy                           0.97      1308
+       macro avg       0.97      0.97      0.97      1308
+    weighted avg       0.97      0.97      0.97      1308
