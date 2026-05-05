@@ -1,22 +1,22 @@
 Modelo        : densenet201_sin_ft
-Test Accuracy : 0.9679
-Test Loss     : 0.1106
-F1 Score      : 0.9679
+Test Accuracy : 0.9801
+Test Loss     : 0.0501
+F1 Score      : 0.9802
 
 --- Reporte de clasificación ---
                   precision    recall  f1-score   support
 
-          carbon       1.00      1.00      1.00        75
-   hoja_amarilla       0.94      0.98      0.96       150
-   mancha_anillo       1.00      0.99      1.00       105
-    mancha_parda       0.99      0.97      0.98       150
-         mosaico       0.97      0.94      0.96       150
-     muermo_rojo       0.96      0.91      0.94       150
-            roya       0.93      0.98      0.95       150
-           sanas       0.95      0.97      0.96       150
-           secas       0.99      1.00      0.99        78
-tizon_bacteriano       0.99      0.97      0.98       150
+          carbon     1.0000    1.0000    1.0000        75
+   hoja_amarilla     0.9799    0.9733    0.9766       150
+   mancha_anillo     1.0000    1.0000    1.0000       105
+    mancha_parda     0.9932    0.9733    0.9832       150
+         mosaico     0.9796    0.9600    0.9697       150
+     muermo_rojo     0.9484    0.9800    0.9639       150
+            roya     0.9799    0.9733    0.9766       150
+           sanas     0.9610    0.9867    0.9737       150
+           secas     0.9873    1.0000    0.9936        78
+tizon_bacteriano     0.9932    0.9800    0.9866       150
 
-        accuracy                           0.97      1308
-       macro avg       0.97      0.97      0.97      1308
-    weighted avg       0.97      0.97      0.97      1308
+        accuracy                         0.9801      1308
+       macro avg     0.9823    0.9827    0.9824      1308
+    weighted avg     0.9803    0.9801    0.9802      1308
