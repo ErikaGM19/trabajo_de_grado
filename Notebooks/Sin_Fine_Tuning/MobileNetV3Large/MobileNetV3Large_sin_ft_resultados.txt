@@ -1,0 +1,22 @@
+Modelo        : MobileNetV3Large_sin_ft
+Test Accuracy : 0.9732
+Test Loss     : 0.0758
+F1 Score      : 0.9732
+
+--- Reporte de clasificación ---
+                  precision    recall  f1-score   support
+
+          carbon     1.0000    1.0000    1.0000        75
+   hoja_amarilla     0.9868    0.9933    0.9900       150
+   mancha_anillo     1.0000    1.0000    1.0000       105
+    mancha_parda     0.9484    0.9800    0.9639       150
+         mosaico     0.9603    0.9667    0.9635       150
+     muermo_rojo     0.9536    0.9600    0.9568       150
+            roya     0.9653    0.9267    0.9456       150
+           sanas     0.9533    0.9533    0.9533       150
+           secas     1.0000    1.0000    1.0000        78
+tizon_bacteriano     1.0000    0.9867    0.9933       150
+
+        accuracy                         0.9732      1308
+       macro avg     0.9768    0.9767    0.9766      1308
+    weighted avg     0.9734    0.9732    0.9732      1308

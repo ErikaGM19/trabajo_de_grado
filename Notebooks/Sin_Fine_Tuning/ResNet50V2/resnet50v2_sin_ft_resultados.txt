@@ -1,0 +1,22 @@
+Modelo        : resnet50v2_sin_ft
+Test Accuracy : 0.9732
+Test Loss     : 0.0898
+F1 Score      : 0.9733
+
+--- Reporte de clasificación ---
+                  precision    recall  f1-score   support
+
+          carbon     1.0000    1.0000    1.0000        75
+   hoja_amarilla     0.9669    0.9733    0.9701       150
+   mancha_anillo     1.0000    1.0000    1.0000       105
+    mancha_parda     0.9671    0.9800    0.9735       150
+         mosaico     0.9863    0.9600    0.9730       150
+     muermo_rojo     0.9286    0.9533    0.9408       150
+            roya     0.9728    0.9533    0.9630       150
+           sanas     0.9481    0.9733    0.9605       150
+           secas     1.0000    1.0000    1.0000        78
+tizon_bacteriano     1.0000    0.9733    0.9865       150
+
+        accuracy                         0.9732      1308
+       macro avg     0.9770    0.9767    0.9767      1308
+    weighted avg     0.9736    0.9732    0.9733      1308
