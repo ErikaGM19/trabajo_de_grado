@@ -1,0 +1,22 @@
+Modelo        : vitb16_sin_ft
+Test Accuracy : 0.9763
+Test Loss     : 0.0770
+F1 Score      : 0.9762
+
+--- Reporte de clasificación ---
+                  precision    recall  f1-score   support
+
+          carbon     1.0000    1.0000    1.0000        75
+   hoja_amarilla     0.9868    1.0000    0.9934       150
+   mancha_anillo     1.0000    0.9619    0.9806       105
+    mancha_parda     0.9740    1.0000    0.9868       150
+         mosaico     0.9728    0.9533    0.9630       150
+     muermo_rojo     0.9792    0.9400    0.9592       150
+            roya     0.9527    0.9400    0.9463       150
+           sanas     0.9427    0.9867    0.9642       150
+           secas     0.9873    1.0000    0.9936        78
+tizon_bacteriano     0.9934    1.0000    0.9967       150
+
+        accuracy                         0.9763      1308
+       macro avg     0.9789    0.9782    0.9784      1308
+    weighted avg     0.9765    0.9763    0.9762      1308
