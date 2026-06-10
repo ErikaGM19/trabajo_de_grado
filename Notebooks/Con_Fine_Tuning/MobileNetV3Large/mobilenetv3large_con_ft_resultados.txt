@@ -1,25 +1,25 @@
 Modelo        : mobilenetv3large_con_ft
-Test Accuracy : 0.9847
-Test Loss     : 0.0953
-F1 Score      : 0.9847
+Test Accuracy : 0.9824
+Test Loss     : 0.0962
+F1 Score      : 0.9825
 
-Fase 1 — mejor val_accuracy: 0.9801
-Fase 2 — mejor val_accuracy: 0.9771
+Fase 1 â€” mejor val_accuracy: 0.9786
+Fase 2 â€” mejor val_accuracy: 0.9740
 
---- Reporte de clasificación ---
+--- Reporte de clasificaciÃ³n ---
                   precision    recall  f1-score   support
 
           carbon     1.0000    1.0000    1.0000        75
    hoja_amarilla     1.0000    0.9933    0.9967       150
    mancha_anillo     1.0000    1.0000    1.0000       105
-    mancha_parda     0.9800    0.9800    0.9800       150
-         mosaico     1.0000    0.9667    0.9831       150
-     muermo_rojo     0.9613    0.9933    0.9770       150
-            roya     0.9792    0.9400    0.9592       150
-           sanas     0.9494    1.0000    0.9740       150
+    mancha_parda     0.9735    0.9800    0.9767       150
+         mosaico     1.0000    0.9533    0.9761       150
+     muermo_rojo     0.9545    0.9800    0.9671       150
+            roya     0.9861    0.9467    0.9660       150
+           sanas     0.9375    1.0000    0.9677       150
            secas     1.0000    1.0000    1.0000        78
 tizon_bacteriano     1.0000    0.9933    0.9967       150
 
-        accuracy                         0.9847      1308
-       macro avg     0.9870    0.9867    0.9867      1308
-    weighted avg     0.9851    0.9847    0.9847      1308
+        accuracy                         0.9824      1308
+       macro avg     0.9852    0.9847    0.9847      1308
+    weighted avg     0.9830    0.9824    0.9825      1308

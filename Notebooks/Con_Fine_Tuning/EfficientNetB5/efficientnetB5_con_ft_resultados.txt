@@ -1,0 +1,25 @@
+Modelo        : efficientnetB5_con_ft
+Test Accuracy : 0.9847
+Test Loss     : 0.1232
+F1 Score      : 0.9846
+
+Fase 1 — mejor val_accuracy: 0.9794
+Fase 2 — mejor val_accuracy: 0.9778
+
+--- Reporte de clasificación ---
+                  precision    recall  f1-score   support
+
+          carbon     1.0000    1.0000    1.0000        75
+   hoja_amarilla     0.9677    1.0000    0.9836       150
+   mancha_anillo     0.9905    0.9905    0.9905       105
+    mancha_parda     0.9865    0.9733    0.9799       150
+         mosaico     0.9868    0.9933    0.9900       150
+     muermo_rojo     0.9669    0.9733    0.9701       150
+            roya     0.9860    0.9400    0.9625       150
+           sanas     0.9868    1.0000    0.9934       150
+           secas     1.0000    1.0000    1.0000        78
+tizon_bacteriano     0.9933    0.9933    0.9933       150
+
+        accuracy                         0.9847      1308
+       macro avg     0.9865    0.9864    0.9863      1308
+    weighted avg     0.9848    0.9847    0.9846      1308

@@ -1,25 +1,25 @@
 Modelo        : resnet50v2_con_ft
-Test Accuracy : 0.9717
-Test Loss     : 0.1353
-F1 Score      : 0.9718
+Test Accuracy : 0.9732
+Test Loss     : 0.1440
+F1 Score      : 0.9733
 
-Fase 1 — mejor val_accuracy: 0.9641
-Fase 2 — mejor val_accuracy: 0.9641
+Fase 1 â€” mejor val_accuracy: 0.9633
+Fase 2 â€” mejor val_accuracy: 0.9648
 
---- Reporte de clasificación ---
+--- Reporte de clasificaciÃ³n ---
                   precision    recall  f1-score   support
 
           carbon     1.0000    1.0000    1.0000        75
-   hoja_amarilla     0.9730    0.9600    0.9664       150
-   mancha_anillo     1.0000    1.0000    1.0000       105
-    mancha_parda     0.9733    0.9733    0.9733       150
-         mosaico     0.9800    0.9800    0.9800       150
-     muermo_rojo     0.9226    0.9533    0.9377       150
-            roya     0.9533    0.9533    0.9533       150
-           sanas     0.9603    0.9667    0.9635       150
-           secas     0.9873    1.0000    0.9936        78
-tizon_bacteriano     1.0000    0.9667    0.9831       150
+   hoja_amarilla     0.9796    0.9600    0.9697       150
+   mancha_anillo     0.9906    1.0000    0.9953       105
+    mancha_parda     0.9800    0.9800    0.9800       150
+         mosaico     0.9799    0.9733    0.9766       150
+     muermo_rojo     0.9286    0.9533    0.9408       150
+            roya     0.9600    0.9600    0.9600       150
+           sanas     0.9539    0.9667    0.9603       150
+           secas     1.0000    1.0000    1.0000        78
+tizon_bacteriano     0.9932    0.9733    0.9832       150
 
-        accuracy                         0.9717      1308
-       macro avg     0.9750    0.9753    0.9751      1308
-    weighted avg     0.9720    0.9717    0.9718      1308
+        accuracy                         0.9732      1308
+       macro avg     0.9766    0.9767    0.9766      1308
+    weighted avg     0.9735    0.9732    0.9733      1308
