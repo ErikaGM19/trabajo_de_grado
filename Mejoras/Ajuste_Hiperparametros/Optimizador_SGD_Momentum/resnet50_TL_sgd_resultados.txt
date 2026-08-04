@@ -1,0 +1,49 @@
+EXPERIMENTO: resnet50_TL_sgd
+Fecha: 2026-08-02 01:09:17
+
+--- Hiperparámetros usados ---
+learning_rate: 1e-05
+optimizador: sgd
+batch_size: 16
+dropout: 0.3
+capas_descongeladas: 50
+epochs_max: 30
+epochs_entrenadas: 30
+
+--- Resultados en test ---
+Test Accuracy : 0.9610
+Test Loss     : 0.1246
+F1 Score      : 0.9611
+Duración      : 232.6 min
+
+--- Reporte de clasificación ---
+                  precision    recall  f1-score   support
+
+          carbon     0.9740    1.0000    0.9868        75
+   hoja_amarilla     0.9673    0.9867    0.9769       150
+   mancha_anillo     1.0000    0.9811    0.9905       106
+    mancha_parda     0.9416    0.9667    0.9539       150
+         mosaico     0.9787    0.9200    0.9485       150
+     muermo_rojo     0.9524    0.9333    0.9428       150
+            roya     0.9477    0.9667    0.9571       150
+           sanas     0.9114    0.9600    0.9351       150
+           secas     1.0000    0.9487    0.9737        78
+tizon_bacteriano     0.9797    0.9667    0.9732       150
+
+        accuracy                         0.9610      1309
+       macro avg     0.9653    0.9630    0.9638      1309
+    weighted avg     0.9617    0.9610    0.9611      1309
+
+--- Nota metodológica ---
+Este experimento alcanzó el límite máximo de épocas (30) sin activar el
+Early Stopping. Las curvas de entrenamiento muestran una convergencia
+consistente pero considerablemente más lenta que Adam y RMSprop bajo el
+mismo learning rate (1e-5). Este comportamiento es consistente con la
+literatura, que indica que SGD generalmente requiere tasas de aprendizaje
+más altas que los optimizadores adaptativos (Adam, RMSprop) para converger
+en un número comparable de épocas. Se mantuvo el mismo learning rate para
+los tres optimizadores evaluados con el fin de aislar el efecto del tipo
+de optimizador dentro de la búsqueda secuencial; sin embargo, se reconoce
+como limitación metodológica que esta decisión pudo perjudicar
+particularmente a SGD, que no fue evaluado en su rango de tasas de
+aprendizaje óptimo.

@@ -1,0 +1,36 @@
+timestamp,experimento,learning_rate,optimizador,batch_size,dropout,capas_descongeladas,epochs_max,epochs_entrenadas,test_accuracy,test_loss,f1_score,duracion_min
+20260728_212705,resnet50_TL_lr0001,0.0001,adam,32.0,0.5,0.0,30.0,30.0,0.971,0.0869,0.971,160.1
+20260729_002029,resnet50_TL_lr01,0.01,adam,32.0,0.5,0.0,30.0,30.0,0.9618,0.1434,0.962,162.2
+20260729_230237,resnet50_TL_lr001,0.001,adam,32.0,0.5,0.0,30.0,19.0,0.9763,0.0786,0.9763,107.8
+20260729_230237,resnet50_TL_dropout05,0.001,adam,32.0,0.5,0.0,30.0,19.0,0.9763,0.0786,0.9763,107.8
+20260730_121200,resnet50_TL_dropout03,0.001,adam,32.0,0.3,0.0,30.0,27.0,0.9855,0.0597,0.9855,150.9
+20260730_175835,resnet50_TL_dropout07,0.001,adam,32.0,0.7,0.0,30.0,30.0,0.971,0.0898,0.9711,167.7
+20260730_121200,resnet50_TL_capas0,0.001,adam,32.0,0.3,0.0,30.0,27.0,0.9855,0.0597,0.9855,150.9
+20260730_232935,resnet50_TL_capas10,1e-05,adam,32.0,0.3,10.0,30.0,24.0,0.9862,0.0457,0.9862,129.2
+20260731_141043,resnet50_TL_batch32,1e-05,adam,32.0,0.3,50.0,30.0,16.0,0.9954,0.012,0.9954,113.8
+20260731_120215,resnet50_TL_capas30,1e-05,adam,32.0,0.3,30.0,30.0,22.0,0.9939,0.0126,0.9939,137.1
+20260731_141043,resnet50_TL_capas50,1e-05,adam,32.0,0.3,50.0,30.0,16.0,0.9954,0.012,0.9954,113.8
+20260731_190330,resnet50_TL_batch16,1e-05,adam,16.0,0.3,50.0,30.0,14.0,0.9977,0.0092,0.9977,105.3
+20260731_214031,resnet50_TL_batch64,1e-05,adam,64.0,0.3,50.0,30.0,21.0,0.9969,0.0093,0.9969,139.1
+20260801_110939,resnet50_TL_final_optimizado,1e-05,adam,16.0,0.3,50.0,75.0,32.0,0.9969,0.006,0.9969,235.0
+20260801_140806,resnet50_TL_rmsprop,1e-05,rmsprop,16.0,0.3,50.0,30.0,19.0,0.9954,0.0125,0.9954,157.8
+import sys, os,,,,,,,,,,,
+sys.path.append(os.path.abspath('..')),,,,,,,,,,,,
+from experimento_utils import guardar_resultado_csv,,,,,,,,,,,,
+guardar_resultado_csv({,,,,,,,,,,,,
+    'timestamp': '20260801_000000',,,,,,,,,,,,
+    'experimento': 'resnet50_TL_optimizado_completo',,,,,,,,,,,,
+    'learning_rate': 1e-5,,,,,,,,,,,,
+    'optimizador': 'adam',,,,,,,,,,,,
+    'batch_size': BATCH_SIZE,,,,,,,,,,,,
+    'dropout': 0.3,,,,,,,,,,,,
+    'capas_descongeladas': CAPAS_DESCONGELADAS,,,,,,,,,,,,
+    'epochs_max': EPOCHS,,,,,,,,,,,,
+    'epochs_entrenadas': len(history.history['loss']),,,,,,,,,,,,
+    'test_accuracy': round(float(test_accuracy), 4),,,,,,,,,,,
+    'test_loss': round(float(test_loss), 4),,,,,,,,,,,
+    'f1_score': round(float(f1), 4),,,,,,,,,,,
+    'duracion_min': None  # no la calculamos en este notebook, puedes dejarlo vacío o sumar los tiempos del log,,,,,,,,,,,
+}),,,,,,,,,,,,
+20260802_010917,resnet50_TL_sgd,1e-05,sgd,16.0,0.3,50.0,30.0,30.0,0.961,0.1246,0.9611,232.6
+20260731_190330,resnet50_TL_adam,1e-05,adam,16.0,0.3,50.0,30.0,14.0,0.9977,0.0092,0.9977,105.3

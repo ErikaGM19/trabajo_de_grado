@@ -1,0 +1,22 @@
+Modelo        : resnet50_TL_hsv
+Test Accuracy : 0.9404
+Test Loss     : 0.1762
+F1 Score      : 0.9404
+
+--- Reporte de clasificación ---
+                  precision    recall  f1-score   support
+
+          carbon     1.0000    1.0000    1.0000        75
+   hoja_amarilla     0.9057    0.9600    0.9320       150
+   mancha_anillo     1.0000    0.9811    0.9905       106
+    mancha_parda     0.9231    0.9600    0.9412       150
+         mosaico     0.9329    0.9267    0.9298       150
+     muermo_rojo     0.9478    0.8467    0.8944       150
+            roya     0.8758    0.9400    0.9068       150
+           sanas     0.9252    0.9067    0.9158       150
+           secas     0.9605    0.9359    0.9481        78
+tizon_bacteriano     1.0000    0.9867    0.9933       150
+
+        accuracy                         0.9404      1309
+       macro avg     0.9471    0.9444    0.9452      1309
+    weighted avg     0.9415    0.9404    0.9404      1309
